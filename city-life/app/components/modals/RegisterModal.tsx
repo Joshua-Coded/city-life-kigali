@@ -12,6 +12,8 @@ import {
 
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import Modal from './Modal';
+import Heading from '../Heading';
+
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
@@ -45,6 +47,15 @@ const RegisterModal = () => {
             setIsLoading(false);
         })
     }
+
+    const bodyContent = (
+        <div className='flex flex-col gap-4'>
+                <Heading
+                title='Welcome to City Life Kigali'
+                subtitle='Create an Account!'
+                />
+        </div>
+    )
     
     return (
             <Modal
@@ -53,7 +64,8 @@ const RegisterModal = () => {
             title='Register'
             actionLabel='Continue'
             onClose={registerModal.onClose}
-            onSubmit={handleSubmit(onSubmit)}            
+            onSubmit={handleSubmit(onSubmit)}
+            body={bodyContent}            
             />
     )    
 }
