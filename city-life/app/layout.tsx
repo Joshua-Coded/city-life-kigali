@@ -7,6 +7,7 @@ import ClientOnly from './components/ClientOnly'
 // import Modal from './components/modals/Modal'
 import RegisterModal from './components/modals/RegisterModal'
 import ToastProvider from './providers/ToasterProvider'
+import LoginModal from './components/modals/LoginModal'
 export const metadata = {
   title: 'City Life',
   description: 'Find your comfort Home Here',
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={font.className}>
         <ClientOnly>
         <ToastProvider />
+        <LoginModal />
         <RegisterModal />
         <Navbar />
         </ClientOnly>
