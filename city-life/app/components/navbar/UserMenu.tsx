@@ -1,5 +1,6 @@
 'use client'
 
+import {User} from '@prisma/client';
 import {AiOutlineMenu} from 'react-icons/ai';
 import Avatar from '../Avatar';
 import { useCallback, useState } from 'react';
@@ -7,9 +8,16 @@ import MenuItem from './MenuItem';
 
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
+import { signOut } from 'next-auth/react';
 
 
-const UserMenu = () => {
+interface UserMenuProps {
+    currentUser: User | null;
+}
+
+const UserMenu: React.FC<UserMenuProps> = ({
+    currentUser
+}) => {
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
     const [isOpen, setIsOpen] = useState(false);
@@ -87,16 +95,49 @@ const UserMenu = () => {
                     flex-col
                     cursor-pointer
                     '>
-<>
-<MenuItem 
+
+                {currentUser ?  (
+                    <>
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='My deals' />
+                    
+                    
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='My Favourite' />
+
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='My Favourite' />
+
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='My Favourite' />
+                    
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='My Favourite' />
+                    
+                    <MenuItem 
+                    onclick={() => {}}
+                    label='City Life My Home' />
+                    <hr />
+                    
+                    <MenuItem 
+                    onclick={() => signOut()}
+                    label='LogOut' />
+                    </>
+                ) : (
+   <>
+                    <MenuItem 
 onclick={loginModal.onOpen}
 label='Login' />
-
-
 <MenuItem 
 onclick={registerModal.onOpen}
 label='Sign Up' />
 </>
+                )}
                     </div>
 
                 </div>
