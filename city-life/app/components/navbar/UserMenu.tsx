@@ -45,7 +45,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 transition
                 cursor-pointer"
                 >
-                Kigali My Home
+                Afri Homes
                 </div>
                 <div 
                 onClick={toggleOpen}
