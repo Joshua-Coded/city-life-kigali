@@ -33,9 +33,8 @@ md:gap-0
 </div>
 </Container>
     </div>
-    <Categories>
-        
-    </Categories>
+    {/* category section */}
+    <Categories/>
     </div>
     )
 }
