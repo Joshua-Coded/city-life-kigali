@@ -5,6 +5,7 @@ import Modal from "./Modal"
 import { useMemo, useState } from "react";
 import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
+import CategoryInput from "../inputs/CategoryInput";
 
 
 enum STEPS{
@@ -75,7 +76,7 @@ let bodyContent = (
                      key={item.label}
                      className="col-span-1"
                      >
-                        <CategoryInput
+                        <CategoryInput  
                         onClick={() => {}}
                         selected={false}
                         label={item.label}
