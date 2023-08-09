@@ -12,25 +12,30 @@ import {
   GiIsland,
   GiWindmill
 } from 'react-icons/gi';
-import { FaSkiing } from 'react-icons/fa';
+{/* <FontAwesomeIcon icon={faTaxi} /> */}
+
+import { FaBiking, FaSkiing } from 'react-icons/fa';
 import { BsSnow } from 'react-icons/bs';
 import { IoDiamond } from 'react-icons/io5';
+import { FaPlaneDeparture } from 'react-icons/fa';
+import { FaShoppingBag } from 'react-icons/fa';
 import { MdOutlineVilla } from 'react-icons/md';
-
+import { FaTaxi } from 'react-icons/fa';
+import { FaCcDinersClub } from 'react-icons/fa';
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
 
 
 export const categories = [
   {
-    label: 'Beach',
+    label: 'Furnished',
     icon: TbBeach,
-    description: 'This property is close to the beach!',
+    description: 'This is a furnished!',
   },
   {
-    label: 'Windmills',
+    label: 'Unfurnished',
     icon: GiWindmill,
-    description: 'This property is has windmills!',
+    description: 'This is a unfurnished!',
   },
   {
     label: 'Modern',
@@ -38,9 +43,9 @@ export const categories = [
     description: 'This property is modern!'
   },
   {
-    label: 'Countryside',
-    icon: TbMountain,
-    description: 'This property is in the countryside!'
+    label: 'Apartment',
+    icon: FaPlaneDeparture,
+    description: 'We have a cool apartment for you!'
   },
   {
     label: 'Pools',
@@ -48,55 +53,55 @@ export const categories = [
     description: 'This is property has a beautiful pool!'
   },
   {
-    label: 'Islands',
-    icon: GiIsland,
+    label: 'Clubs',
+    icon: FaCcDinersClub,
     description: 'This property is on an island!'
   },
   {
-    label: 'Lake',
+    label: 'Resturants',
     icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    description: 'We have got a cool and affordable Resturant for you!'
   },
   {
-    label: 'Skiing',
-    icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    label: 'Car Renting',
+    icon: FaTaxi,
+    description: 'you could have your car rented here!'
   },
   {
-    label: 'Castles',
+    label: 'Event Center',
     icon: GiCastle,
-    description: 'This property is an ancient castle!'
+    description: 'Do have a party for your family!'
   },
   {
-    label: 'Caves',
-    icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    label: 'Shops for Rent',
+    icon: FaShoppingBag,
+    description: 'You have a space for use?!'
   },
   {
-    label: 'Camping',
-    icon: GiForestCamp,
-    description: 'This property offers camping activities!'
+    label: 'Bikes for Rent',
+    icon: FaBiking,
+    description: 'How about Bikes!'
   },
-  {
-    label: 'Arctic',
-    icon: BsSnow,
-    description: 'This property is in arctic environment!'
-  },
-  {
-    label: 'Desert',
-    icon: GiCactus,
-    description: 'This property is in the desert!'
-  },
-  {
-    label: 'Barns',
-    icon: GiBarn,
-    description: 'This property is in a barn!'
-  },
-  {
-    label: 'Lux',
-    icon: IoDiamond,
-    description: 'This property is brand new and luxurious!'
-  }
+  // {
+  //   label: 'Arctic',
+  //   icon: BsSnow,
+  //   description: 'This property is in arctic environment!'
+  // },
+  // {
+  //   label: 'Desert',
+  //   icon: GiCactus,
+  //   description: 'This property is in the desert!'
+  // },
+  // {
+  //   label: 'Barns',
+  //   icon: GiBarn,
+  //   description: 'This property is in a barn!'
+  // },
+  // {
+  //   label: 'Lux',
+  //   icon: IoDiamond,
+  //   description: 'This property is brand new and luxurious!'
+  // }
 ]
 
 const Categories = () => {

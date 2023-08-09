@@ -124,16 +124,12 @@ const UserMenu: React.FC<UserMenuProps> = ({
 
                     <MenuItem 
                     onclick={() => {}}
-                    label='My Favourite' />
+                    label='My Properties' />
 
                     <MenuItem 
                     onclick={() => {}}
-                    label='My Favourite' />
-                    
-                    <MenuItem 
-                    onclick={() => {}}
-                    label='My Favourite' />
-                    
+                    label='My Reservation' />
+                
                     <MenuItem 
                     onclick={rentModal.onOpen}
                     label='City Life My Home' />
